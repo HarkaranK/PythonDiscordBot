@@ -1,0 +1,27 @@
+<html lang="en">
+    <head>
+        <!-- Author: Harkaran Kang-->
+        <title>HK Bot</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="">
+        <script src="" type="text/javascript" defer></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer=""></script>
+        <script src="https://kit.fontawesome.com/7bd33cd057.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Data from JSON file</h1>
+        </header>
+        <main>
+        {% for item in data %}
+            <h2>{{ item.name }}</h2>
+            <p>{{ item.description }}</p>
+        {% endfor %}
+
+
+        </main>
+        <footer>        
+        </footer>
+    </body>
+</html>
